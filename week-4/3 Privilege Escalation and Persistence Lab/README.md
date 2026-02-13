@@ -24,7 +24,7 @@ This lab focuses on elevating privileges after initial compromise and maintainin
 
 | Task ID | Technique     | Target IP     | Status  | Outcome    |
 |--------:|--------------|---------------|---------|-----------|
-| 010     | SUID Exploit | 192.168.1.150 | Success | Root Shell |
+| 010     | SUID Exploit | 192.168.43.131 | Success | Root Shell |
 
 ---
 
@@ -34,7 +34,7 @@ LinPEAS identified misconfigured SUID binaries. Exploitation allowed execution w
 
 ---
 
-## Persistence Summary (50 words)
+## Persistence Summary 
 
 A cron-based persistence mechanism was deployed to trigger a reverse shell at regular intervals. Access remained available after user logout and service restarts. Defensive recommendations include monitoring scheduled tasks, auditing privileged files, and implementing integrity verification.
 
@@ -59,3 +59,4 @@ A cron-based persistence mechanism was deployed to trigger a reverse shell at re
 
 ## Author
 Syed Waseem
+
